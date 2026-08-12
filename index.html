@@ -15,7 +15,7 @@
             theme: {
                 extend: {
                     colors: {
-                        primary: "#00804b",
+
                     }
                 }
             }
@@ -24,6 +24,220 @@
 </head>
 
 <body class="bg-white min-h-screen">
+    <body class="bg-white min-h-screen">
+
+    <!-- =========================
+         TOP NAVIGATION
+    ========================== -->
+    <header class="w-full bg-white border-b border-gray-100 px-8 py-4">
+
+        <div class="flex items-center justify-between gap-8">
+
+            <!-- ReserveBite Logo -->
+            <div class="text-2xl font-bold text-green-700">
+                ReserveBite
+            </div>
+
+
+            <!-- Search Bar -->
+            <div class="flex-1 max-w-[450px]">
+
+                <div class="flex items-center
+                            w-full h-11
+                            border border-gray-200
+                            rounded-lg
+                            px-4
+                            bg-white">
+
+                    <!-- Search Icon -->
+                    <svg
+                        class="w-5 h-5 text-gray-400 mr-3"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24">
+
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="m21 21-4.35-4.35
+                               m2.35-5.65
+                               a8 8 0 1 1-16 0
+                               a8 8 0 0 1 16 0z">
+                        </path>
+
+                    </svg>
+
+                    <input
+                        type="text"
+                        placeholder="Search"
+                        class="w-full outline-none
+                               text-sm text-gray-700
+                               placeholder-gray-400
+                               bg-transparent">
+                </div>
+
+            </div>
+
+
+                <!-- =========================
+                     LOCATION
+                ========================== -->
+                <div class="flex items-center gap-2 px-3 py-2">
+
+                    <!-- Location Icon -->
+                    <svg
+                        class="w-5 h-5 text-gray-500"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24">
+                    <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M12 21s8-7.5 8-13
+                            a8 8 0 1 0-16 0
+                            c0 5.5 8 13 8 13z">
+                    
+
+                        <circle
+                            cx="12"
+                            cy="8"
+                            r="2.5">
+                        </circle>
+
+                    </svg>
+
+
+                    <div class="leading-tight">
+
+                        <p class="text-[10px] text-gray-400">
+                            Your location
+                        </p>
+
+                        <p class="text-xs text-gray-700">
+                            New Delhi
+                        </p>
+
+                    </div>
+
+
+                    <!-- Down Arrow -->
+                    <svg
+                        class="w-4 h-4 text-gray-400 ml-1"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24">
+
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="m6 9 6 6 6-6">
+                        </path>
+
+                    </svg>
+
+                </div>
+
+
+                <!-- =========================
+                     NOTIFICATION BUTTON
+                ========================== -->
+                <button
+                    type="button"
+                    class="relative
+                           w-10 h-10
+                           bg-green-700
+                           hover:bg-green-800
+                           flex items-center
+                           justify-center">
+
+                    <!-- Bell Icon -->
+                    <svg
+                        class="w-5 h-5 text-white"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24">
+
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M18 8
+                               a6 6 0 0 0-12 0
+                               c0 7-3 7-3 9
+                               h18
+                               c0-2-3-2-3-9">
+                        </path>
+
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M13.73 21
+                               a2 2 0 0 1-3.46 0">
+                        </path>
+
+                    </svg>
+
+
+                    <!-- Notification Number -->
+                    <span
+                        class="absolute
+                                 text-white">
+
+
+                    </span>
+
+                </button>
+
+
+                <!-- =========================
+                     PROFILE BUTTON
+                ========================== -->
+                <button
+                    type="button"
+                    class="w-10 h-10
+                           bg-green-700
+                           hover:bg-green-800
+                           rounded-lg
+                           flex items-center
+                           justify-center">
+
+                    <!-- User Icon -->
+                    <svg
+                        class="w-5 h-5 text-white"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24">
+
+                        <!-- Head -->
+                        <circle
+                            cx="12"
+                            cy="8"
+                            r="3.5">
+                        </circle>
+
+                        <!-- Body -->
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M5 21">
+                            a7 7 0 0 1 14 0
+                        </path>
+
+                    </svg>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
 
     <!-- Main Container -->
     <div class="max-w-[1360px] mx-auto bg-white min-h-screen rounded-xl overflow-hidden">
@@ -188,10 +402,10 @@
             <!-- =========================
                  RIGHT CONTENT
             ========================== -->
-            <main class="flex-1 bg-whitep-8">
+            <main class="flex-1 bg-white p-8">
 
                 <!-- Header -->
-                <div class="flex items-center justify-between mb-5">
+                <div class="flex items-center justify-between mb-8">
 
                     <h1 class="text-3xl text-green-700 font-normal">
                         Best Restaurants
@@ -235,7 +449,7 @@
                         >
 
                         <!-- Restaurant Information -->
-                        <div class="flex-1 pt-2">
+                        <div class="flex-1 pt-6">
 
                             <!-- Title + Rating -->
                             <div class="flex items-center justify-between">
@@ -310,7 +524,7 @@
                     <article class="bg-white rounded-xl p-4 flex gap-6 min-h-[220px]">
 
                         <img
-                            src="image
+                            src=""
                             class="w-[250px] h-[189px] object-cover rounded-xl shrink-0"
                         >
 
